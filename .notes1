@@ -1,0 +1,48 @@
+Linus is the hero
+
+He needs to defeat godzilla
+
+Godzilla is causing disrepair in the directory system
+
+What does disrepair look like?
+	Buildings/houses get moved to the wrong location, need to fix that by using mv to put them in the right place
+
+Instead of cat, we will have them run scripts
+	This will be more interactive than just reading files
+	they will use cat for objects they dont need to interact with like houses and bldgs
+
+use ls to scan surroundings
+	dont use -a argument, we need to hide things
+
+cd allows you to trvel between areas
+
+the citizens/npcs will be scripts that just echo things
+	using scripts to allow dialog, not just monolog, with cases and switches
+
+city is Directoropolis
+
+unzipping as a way of making the rubble better and usable
+
+UNGZ for un godzilla
+
+put a citizen in the zipped rubble, so the player can free them when they ungz
+
+solving some kind of puzzle at the end of the game, instead of a boss battle
+	that way they can actually win and not lose
+
+defeating godzilla in a certain number of lines as an additional challenge
+	use history to check how many lines theyve typed
+
+teach touch by having people rebuilding the file (its non existent, and they need to build it)
+
+win the game by deleting godzilla 
+
+introduce chmod by saying certain files are guarded or protected, the player needs to give themself perms to enter to bypass protections
+
+grep by having them search (through rubbble, perhaps) for a specific file/npc to talk to
+
+rendering mostly consists of verifying important permissions
+	executables need to be able to execute
+	not just on our machine
+
+no need to have a reset script, they can just load the file
