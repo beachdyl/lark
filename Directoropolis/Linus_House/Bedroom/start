@@ -1,0 +1,7 @@
+#!/bin/bash
+reminder_cd() {
+    builtin cd "$@" && { [ ! -f .cd-reminder ] || cat .cd-reminder 1>&2; }
+}
+
+alias cd=reminder_cd
+
