@@ -1,7 +1,5 @@
 #!/bin/bash
-reminder_cd() {
-    builtin cd "$@" && { [ ! -f .cd-reminder ] || cat .cd-reminder 1>&2; }
+
+ungz(){
+	gzip -d $1
 }
-
-alias cd=reminder_cd
-
