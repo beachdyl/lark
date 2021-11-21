@@ -22,6 +22,7 @@ case "$choice" in
    1) echo "Yeah, I heard some huge rumbles and something about a MONSTER! It stepped on my house and I'm so scared! Linus, you gotta help me."
    ;;
    2) echo "I know Sarah went to UPTOWN's FIRST_STREET, do you think you could find her? I think she may be able to fix my poor house."
+      mv ../.UPTOWN ../UPTOWN 2>/dev/null
    ;;
    3) echo "Goodbye."
       x=0
