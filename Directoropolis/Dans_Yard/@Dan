@@ -4,8 +4,8 @@ a=0 #this is used to trigger a secondary prompt
 x=1 #this is used to trigger the exit status
 
 function menu () {
-	printf "Option 1 [What's happened Dan?]\nOption 2 [How can I help?]\nOption 3 [Goodbye Dan.]\n"
-	read -p "(Enter 1, 2 or 3): " choice
+	printf "Option 1 [What happened, Dan?]\nOption 2 [How can I help?]\nOption 3 [Goodbye, Dan.]\n"
+	read -p "(Enter 1, 2, or 3): " choice
 }
 while [ $x -eq 1 ]
 do
