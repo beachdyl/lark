@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# This file is for Dan to change dialogue once you learn ungz to fix things (now you can fix his house)
+
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+	printf "Option 1 [I can totallly fix it!]\nOption 2 [Goodbye, Dan.]\n"
+	read -p "(Enter 1, or 2): " choice
+}
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+	printf "Did you find Sarah and figure out how to fix my house?\n"
+	menu 	
+	a=1
+else
+        printf "So can you do it?\n"
+	menu
+fi
+case "$choice" in
+   1) echo "That's awesome Linus! If you could please fix it I'd be so grateful."
+   ;;
+   2) echo "Talk to me afterward, yeah?"
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done

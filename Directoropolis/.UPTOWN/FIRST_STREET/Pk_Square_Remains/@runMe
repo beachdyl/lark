@@ -7,10 +7,10 @@ then
 	echo "You still need to clear the rubble, talk to Sarah if you forgot what to do..."
 else 
 	echo "You did it! You cleared the rubble and saved someone trapped under the rubble. How heroic!"
-	rm rubble #Removes the rubble completely
+	rm rubble 2>/dev/null #Removes the rubble completely
 	cat .Timothy > @Timothy 2>/dev/null #Makes an NPC child appear by using a hidden file containing script contents
 	CompQuest1=1 #Putting this here for a possible achievement system, can check them off like checkboxes or use them to gate DOWNTOWN
 	cat .sign > sign 2>/dev/null #Makes a sign with new info appear
-
+	cat ../../../Dans_Yard/.secondDan > ../../../Dans_Yard/@Dan #Changes the Dan NPC to continue directing the storyline
 
 fi

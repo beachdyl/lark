@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#This file exists in case a dev writes over Dan, that way they can restore him. There are 3 versions of Dan , the third interaction will provide you with a major quest. 
+
 a=0 #this is used to trigger a secondary prompt
 x=1 #this is used to trigger the exit status
 

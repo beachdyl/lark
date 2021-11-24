@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ $QuestComp1 -eq 0 ] #This statement is to keep new players from finding this file
+then
+	echo "Don't worry about this quite yet. Try talking to Dan." #Guidance
+else
+	if [ -f Dans_House.gz ] #If you didnt fix the house
+	then
+		echo "Dan's house is still in rubble..."
+	else
+		echo "Congratulations!! You fixed Dan's House!!! I'm sure he's extremely grateful."
+		cat .thirdDan > @Dan
+	fi
+fi
