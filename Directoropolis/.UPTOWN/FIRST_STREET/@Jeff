@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#Jeff was made to give direction and story to the player, he has a menu that expands after talking once, just to ensure conversation is a little interesting
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+        printf "Option 1 [Danger? Do you know what's happening around here?]\n"
+        read -p "(Enter 1): " choice
+}
+
+function menu2 () {
+        printf "Option 1 [Do you know what's happening around here?]\nOption 2 [The people in the park are in danger?]\nOption 3 [Thank you for the information.]\n"
+        read -p "(Enter 1, 2, or 3): " choice
+}
+
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "Hey! Don't you now it's dangerous around here? Are you lost?\n"
+        menu
+        a=1
+else
+        printf "Need anything else?\n"
+        menu2
+fi
+case "$choice" in
+   1)  echo "KNOW?! I SAW it! Godzilla came trampling through the city! He caused a bunch of damage and some places are without power right now. I saw him reduce the park to rubble."
+   ;;
+   2) echo "Yeah man! I hope somewhere we have a hero... I'm sure he'd be super cool and fixing stuff as he goes."
+   ;;
+   3) echo "Good luck man! Keep in mind the city is a messy place right now."
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done
+
