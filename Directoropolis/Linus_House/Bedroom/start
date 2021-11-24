@@ -1,7 +1,0 @@
-#!/bin/bash
-
-ungz(){
-	gzip -d $1
-}
-
-
