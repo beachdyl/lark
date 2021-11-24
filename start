@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ungz(){ #This is a simplification of the gzip command to make it a little easier for the player
+	gzip -d $1
+}
+
+
+. title.sh
+
+#This command is used to move the player to the starting point of the game (Linus Bedroom)
+cd Directoropolis/Linus_House/Bedroom/
+
