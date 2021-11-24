@@ -11,6 +11,9 @@ echo "
  |______|______|______|______|______|______|______|______|______|______|
 "
 
+footsteps(){
+
+sleep 1
 echo "
           ______  
           |______| 
@@ -22,7 +25,13 @@ echo "
 
 " 
 sleep 1
-                                                                                            
+
+
+
+}
+
+footsteps
+
 echo " 
                         _     _     _     _     _     _     _     _     _
                       _| |_ _| |_ _| |_ _| |_ _| |_ _| |_ _| |_ _| |_ _| |_                 
@@ -38,15 +47,37 @@ echo "
                         |_|   |_|   |_|   |_|   |_|   |_|   |_|   |_|   |_|                 
 
 "                                                                                            
-sleep 1
-echo "
-          ______
-          |______|
-"
-sleep 1
-echo "
-  ______
- |______|
+footsteps
+footsteps
 
-"
+clear
+
+cat .art/.house
+sleep 1
+echo "..."
+sleep 2 2 
+echo "......"
+clear
+cat .art/.foot
 sleep 2
+clear
+cat .art/.wake
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

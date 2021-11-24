@@ -1,23 +1,30 @@
-#!/bin/sh
+#!/bin/bash
 
 a=0 #this is used to trigger a secondary prompt
 x=1 #this is used to trigger the exit status
+
+function menu () {
+        printf "Option 1 [*Add dialogue*]\nOption 2 [*Add dialogue*]\nOption 3 [*Add dialogue*]\n"
+        read -p "(Enter 1, 2, or 3): " choice
+}
 while [ $x -eq 1 ]
 do
 if [ $a -eq 0 ]
 then
-	read -p 'How can I help you? ' choice
-	a=1
+        printf "*NPC Question or statement before menu*\n"
+        menu
+        a=1
 else
-	read -p "Secondary Questioning? " choice
+        printf "Anything else?\n"
+        menu
 fi
 case "$choice" in
-   1) echo "You picked option 1" 
+   1) echo "*Information 1*"
    ;;
-   2) echo "You picked option 2" 
+   2) echo "*Information 2*"
    ;;
-   3) echo "Goodbye."
-      x=0 
+   3) echo "*Information 3*"
+      x=0
    ;;
    *) echo "I don't know what that is..."
    ;;
