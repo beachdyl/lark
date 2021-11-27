@@ -1,3 +1,32 @@
 #!/bin/bash
 #This is the final version of Dan, will be swapped out once you have fixed Dans House
 
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+        printf "Option 1 [You're welcome, Dan. Have you heard any news about what's going on?]\nOption 2 [Goodbye, Dan.]\n"
+        read -p "(Enter 1, or 2): " choice
+}
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "You did it! Thank you so much for fixing my house!!!\n"
+        menu
+        a=1
+else
+        printf "Anything else?\n"
+        menu
+fi
+case "$choice" in
+   1) echo "Yeah actually I have, I heard some people in UPTOWN could really use your skills. Godzilla headed there earlier today though. If I were you I would be careful Linus "
+   ;;
+   2) echo "Good luck Linus, you'll do great things!!! Please be careful"
+      x=0
+      mv ../.DOWNTOWN ../DOWNTOWN  
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done
