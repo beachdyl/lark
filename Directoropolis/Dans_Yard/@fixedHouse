@@ -7,7 +7,7 @@ else
 	then
 		echo "Dan's house is still in rubble..."
 	else
-		echo "Congratulations!! You fixed Dan's House!!! I'm sure he's extremely grateful."
+		echo "Congratulations!! You fixed Dan's House!!! I'm sure he's extremely grateful. Try talking to him some more..."
 		cat .thirdDan > @Dan
 	fi
 fi
