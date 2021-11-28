@@ -26,7 +26,7 @@ case "$choice" in
    ;;
    3) echo "Good luck! Remember, use ungz target to clear the rubble, it can be used on anything ending in .gz . Kinda reminds me of ungodzilla..."
       x=0
-      Quest1=1
+      
       
    ;;
    *) echo "I don't know what that is..."
