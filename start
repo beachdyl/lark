@@ -10,3 +10,6 @@ ungz(){ #This is a simplification of the gzip command to make it a little easier
 #This command is used to move the player to the starting point of the game (Linus Bedroom)
 cd Directoropolis/Linus_House/Bedroom/
 
+QuestComp1=0
+
+
