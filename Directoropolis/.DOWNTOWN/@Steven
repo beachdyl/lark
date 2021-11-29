@@ -1,0 +1,34 @@
+#!/bin/bash
+#This guy will teach how to interact with rubble
+
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+	printf "Option 1 [You should be fine.]\nOption 2 [I'll help! How do I do that?]\nOption 3 [I will try right now.]\n"
+	read -p "(Enter 1, 2, or 3): " choice
+}
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+	printf "Hey you! I don't remember if there used to be a leg here, but I want to ask a doctor just in case.\nSeeing that the last one is gone, can you build a new Hospital for me?\n"
+	menu
+	a=1
+else
+	printf "Anything else?\n"
+	menu
+fi
+case "$choice" in
+   1) echo "I might be, yeah. But I bet there are others that need a doctor too. Please, hurry!"
+   ;;
+   2) echo "Oh, that's easy peasy! You can make a new building with the \"mkdir\" command.\nFor right now, you would type \"mkdir Hospital\" (remember, capitalization matters). Afterwards, run @runMe to complete this challenge."
+   ;;
+   3) echo "Thank you! Remember, you can always use \"mkdir (Building_Name)\" to build a new building, whenever you need to."
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done
+

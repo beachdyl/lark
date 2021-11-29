@@ -1,0 +1,20 @@
+#!/bin/bash
+#This file is to run an alias for gzip rubble, gzip does not work for directories and was an oversight
+
+#This checks if you fixed the rubble, if rubble.gz exists then you didn't fix yet
+if [ -d hospital ]
+then 
+	mkdir Hospital
+	rmdir Hospital
+fi
+if [ -d Hospital ]
+then 
+	echo "I don't see a Hospital built. Make sure you used a capital H. You can always talk to Steven if you need a refresher."
+else 
+	echo "Awesome job! Give the Hospital a visit to see what you've accomplished."
+	cat .DrPhil > Hospital/@DrPhil 2>/dev/null #Makes Dr Phil appear by using a hidden script
+	CompQuest2=1 #Putting this here for a possible achievement system, can check them off like checkboxes
+	cat .sign > Hospital/sign 2>/dev/null #Makes a sign with new info appear
+	cat ../UPTOWN/FIRST_STREET/Pk_Square_Remains/.secondSarah > ../UPTOWN/FIRST_STREET/Pk_Square_Remains/@Sarah #creaties the new non-injured sarah after the hospital is constructed
+	rm ../UPTOWN/FIRST_STREET/Pk_Square_Remains/@InjuredSarah 2>/dev/null #removes old InjuredSarah file
+fi

@@ -1,0 +1,34 @@
+#!/bin/bash
+#This iteration will be less injured because she sought treatment at the Hospital
+
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+	printf "Option 1 [Sarah! How do you feel?]\nOption 2 [Anything I can do?]\nOption 3 [Thanks for talking.]\n"
+	read -p "(Enter 1, 2, or 3): " choice
+}
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+	printf "Hey there! You've done a great job so far. Thanks for your help, Linus.'\n"
+	menu
+	a=1
+else
+	printf "Anything else?\n"
+	menu
+fi
+case "$choice" in
+   1) echo "I feel a lot better after visiting the Hospital, and so do tons of other citizens. Thanks so much for bringing that to us."
+   ;;
+   2) echo "Take a look around DOWNTOWN. I bet somebody will have something you can help with. You're doing an awesome job so far, and Godzilla is still around..."
+   ;;
+   3) echo "Of course! Good luck!"
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done
+
