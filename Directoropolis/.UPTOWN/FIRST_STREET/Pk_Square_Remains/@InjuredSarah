@@ -5,26 +5,26 @@ a=0 #this is used to trigger a secondary prompt
 x=1 #this is used to trigger the exit status
 
 function menu () {
-        printf "Option 1 [Sarah! Are you alright?]\nOption 2 [What can I do to help?]\nOption 3 [Thank you, I'll do my best.]\n"
-        read -p "(Enter 1, 2, or 3): " choice
+	printf "Option 1 [Sarah! Are you alright?]\nOption 2 [What can I do to help?]\nOption 3 [Thank you, I'll do my best.]\n"
+	read -p "(Enter 1, 2, or 3): " choice
 }
 while [ $x -eq 1 ]
 do
 if [ $a -eq 0 ]
 then
-        printf "Hey! Hey Linus! You seem to be fine, can you help these citiczens? They're trapped under rubble and I'm too injured to move...\n"
-        menu
-        a=1
+	printf "Hey! Hey Linus! You seem to be fine, can you help these citizens? They're trapped under rubble and I'm too injured to move...\n"
+	menu
+	a=1
 else
-        printf "Anything else?\n"
-        menu
+	printf "Anything else?\n"
+	menu
 fi
 case "$choice" in
    1) echo "Yeah I'll be okay, but there are people under the rubble! Can you help them?"
    ;;
-   2) echo "I'll share my awesome construction technique to repair rubble, you can use the 'ungz rubble' command the free them. Afterwards, run @runMe to complete this challenge."
+   2) echo "I'll share my awesome construction technique to repair rubble left by Godzilla: you can use the \"ungz\" command to free any trapped citizens.\nIn this case, you would type \"ungz rubble.gz\". Afterwards, run @runMe to complete this challenge."
    ;;
-   3) echo "Good luck! Remember, use ungz target to clear the rubble, it can be used on anything ending in .gz . Kinda reminds me of ungodzilla..."
+   3) echo "Good luck! Remember, use \"ungz (target)\" to clear the rubble. It can be used on anything ending in .gz . Kinda reminds me of ungodzilla..."
       x=0
       
       

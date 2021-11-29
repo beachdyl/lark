@@ -20,7 +20,7 @@ else
         menu
 fi
 case "$choice" in
-   1) echo "Yeah actually I have, I heard some people in UPTOWN could really use your skills. Godzilla headed there earlier today though. If I were you I would be careful Linus "
+   1) echo "Yeah actually I have, I heard some people in DOWNTOWN could really use your skills. Godzilla headed there earlier today though. If I were you, I would be careful."
    ;;
    2) echo "Good luck Linus, you'll do great things!!! Please be careful"
       x=0
