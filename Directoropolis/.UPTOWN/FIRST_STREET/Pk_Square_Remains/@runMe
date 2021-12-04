@@ -12,4 +12,5 @@ else
 	QuestComp1=1 #Putting this here for a possible achievement system, can check them off like checkboxes or use them to gate DOWNTOWN
 	cat .sign > sign 2>/dev/null #Makes a sign with new info appear
 	cat ../../../Dans_Yard/.secondDan > ../../../Dans_Yard/@Dan #Changes the Dan NPC to continue directing the storyline
+	echo "You are now able to help Dan with his house issue! Congratulations on your first challenge." #Makes sense of why there was a test script in Dan's Yard
 fi

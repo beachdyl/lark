@@ -30,3 +30,4 @@ case "$choice" in
    ;;
 esac
 done
+echo "You have now unlocked DOWNTOWN! You're shaping up to be quite the hero."
