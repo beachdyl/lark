@@ -5,11 +5,32 @@ ungz(){ #This is a simplification of the gzip command to make it a little easier
 }
 
 
-. .title.sh
+filler(){ #This is just to be used for line tearing
+	echo "-----------------------------------------------------------------------------------------------------------------------------------"
+}
+
+help(){ #I believe this is technically an override, it will let users have help with the basics. Everyone can at least remember 'help'
+        echo "It's okay to need help. Here are some basics - no spoilers ;)"
+	filler
+	echo "Use 'ls' to look at your immediate surroundings, this will let you see NPCs, directories, and files such as signs."
+	filler
+        echo "'cd Directory' will take you to the directory you want, or 'cd ..' to backtrack"
+	filler
+	echo "'cat sign' will read the contents of a sign for example, use this on non-directories and non-NPCs. Or do if you want to see code."
+	filler
+}
+
+
+. .title.sh #This runs the title sequence
+
+
+
+
+
 
 #This command is used to move the player to the starting point of the game (Linus Bedroom)
 cd Directoropolis/Linus_House/Bedroom/
-
+echo "If you need help, type 'help' for a quick list of the basics"
 QuestComp1=0
 
 
