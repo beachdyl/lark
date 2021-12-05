@@ -35,4 +35,5 @@ echo "If you need help, type 'help' for a quick list of the basics"
 #This is the section for challenge and completion variables
 QuestComp1=0
 QuestComp2=0
+QuestComp3=0
 LOBERG=0

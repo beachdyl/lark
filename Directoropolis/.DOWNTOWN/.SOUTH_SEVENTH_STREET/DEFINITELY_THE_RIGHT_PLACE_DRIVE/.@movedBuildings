@@ -7,6 +7,7 @@ if [ -d COMPLEX_A/A114 ] && [ -d COMPLEX_A/A336 ] && [ -d COMPLEX_B/B981 ] && [ 
 then 
 	echo "You did it! You successfully helped Loberg to move his buildings back!!! Very impressive. Talk to Loberg to hear what he has to say..."
 	cat .secondLoberg > @Loberg 2>/dev/null
+	QuestComp3=1
 else 
 	echo "Looks like you still aren't done..."
 fi

@@ -70,9 +70,9 @@ case "$choice2" in
    1) echo "This mission is not for the weak of heart, though your skills show this should be right on your level of skill. Linus, I think you may be the only one who can truly do this."
    ;;
    #Used printf here because of the long output, needed formatting
-   2) printf "You must head to MIDDLETOWN of Directoropolis, I've heard reports of the military holding off Godzilla, they just need a user. You own this whole Directoropolis, and should be able to restore balance.\nFind Garreth, he will brief you.\n"
+   2) printf "You must head to MIDDLETOWN of Directoropolis, I've heard reports of the military holding off Godzilla, they just need a user. You own this whole Directoropolis, and should be able to restore balance.\nFind Garreth, he will brief you. P.S. You can use 'cd ../../../' to head to Directoropolis instantly.\n"
    ;;
-   3) echo "Best of luck Linus, remember, head to MIDDLETOWN of Directoropolis. You're our noly hope."
+   3) echo "Best of luck Linus, remember, head to MIDDLETOWN of Directoropolis. You're our only hope."
       x=0
    ;;
    *) echo "I don't know what that is..."
@@ -80,3 +80,4 @@ case "$choice2" in
 esac
 done
 
+mv ../../../.MIDDLETOWN ../../../MIDDLETOWN #Makes MIDDLETOWN available
