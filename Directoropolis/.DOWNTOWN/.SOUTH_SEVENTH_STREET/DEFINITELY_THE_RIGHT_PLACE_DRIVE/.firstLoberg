@@ -1,0 +1,45 @@
+#!/bin/bash
+#The purpose of Loberg is to teach using the mv command, There are 3 Blocks to move things into. It will be easy
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+        printf "Option 1 [How could I possibly move things? That's a whole directory!!]\nOption 2 [What would you like for me to do?]\nOption 3 [Goodbye, Loberg.]\n"
+        read -p "(Enter 1, 2, or 3): " choice
+}
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "Salutations young fellow! Mayhaps you coulds't help mineself ponce a woller? The scally mong hast misplaced me tenants!\n"
+	sleep 4
+	printf "...\n"
+	sleep 2
+	printf "...\n"
+	sleep 2
+	printf "...\n"
+	sleep 2
+	printf "Ah, you're American. Hey there, would you care to help me move some buildings? It seems Godzilla has knocked some of my apartments out of their complexes.\n"
+        menu
+        a=1
+else
+        printf "Be a chap, yes?\n"
+        menu
+fi
+case "$choice" in
+   1) echo "The shell is quite powerful Linus. Everyhting you have been interacting with is shell scripts in the Directoropolis. A single line can do so much."
+   ;;
+2) echo "Quite simple to move things, trust me. Use the command 'mv target *space* destination' The target and destination could even be a directory or two deep, you can use / and [TAB] to help."
+   echo "I'll add instructions on a sign for you. You should see the challenge now."
+   ;;
+   3) echo "Good luck Linus, I'll add instructions on a sign for you. You should see the challenge now."
+	   cp .Lobergs_Sign Lobergs_Sign 
+	   mkdir COMPLEX_A COMPLEX_B COMPLEX_C
+	   touch A114 A336 B981 B1 C646 C23
+	   mv .@movedBuildings @movedBuildings
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done

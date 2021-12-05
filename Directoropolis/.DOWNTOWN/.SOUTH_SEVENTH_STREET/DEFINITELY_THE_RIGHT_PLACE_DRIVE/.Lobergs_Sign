@@ -1,0 +1,5 @@
+Hello chap, I see you found the sign. Allow me to explain.
+If you have a ball in front of you, and you want to put it into the bin, you would use
+'mv ball bin/' to move the ball into the bin. Easy yes?
+What if your bin has a slot, like for 'redBalls' so we have 'mv ball bin/redBalls/' No, we won't use this today, though it may help you one day.
+I need you to help me move the apartments beginning with letters A B and C into their complex again.

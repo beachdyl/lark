@@ -1,10 +1,10 @@
 #!/bin/bash
-#This file is to run an alias for gzip rubble, gzip does not work for directories and was an oversight
+#This file is used to validate the use of mkdir as a skill, it also makes characters appear and changes the environment
 
-#This checks if you fixed the rubble, if rubble.gz exists then you didn't fix yet
+#This checks if you used a lowercase letter, then tells you that capitalization is important in the shell.
 if [ -d hospital ]
 then 
-	echo "You used lowecase h, you should know that capitalization matters in the shell. Try using capital H."
+	echo "You used lowecase h, you should know that capitalization matters in the shell. Try again using capital H. 'hospital' has been removed."
 	rmdir hospital
 fi
 if [ -d Hospital ]
@@ -13,8 +13,8 @@ then
 	cat .DrPhil > Hospital/@DrPhil 2>/dev/null #Makes Dr Phil appear by using a hidden script
 	CompQuest2=1 #Putting this here for a possible achievement system, can check them off like checkboxes
 	cat .sign > Hospital/sign 2>/dev/null #Makes a sign with new info appear
-	cat ../UPTOWN/FIRST_STREET/Pk_Square_Remains/.secondSarah > ../UPTOWN/FIRST_STREET/Pk_Square_Remains/@Sarah #creaties the new non-injured sarah after the hospital is constructed
 	rm ../UPTOWN/FIRST_STREET/Pk_Square_Remains/@InjuredSarah 2>/dev/null #removes old InjuredSarah file
+	cp .secondSarah Hospital/@Sarah #Makes Sarah appear in the hospital
 else
 	echo "I don't see a Hospital built. Make sure you used a capital H. You can always talk to Steven if you need a refresher."
 fi
