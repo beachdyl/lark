@@ -5,7 +5,7 @@ x=1 #this is used to trigger the exit status
 
 
 
-#This will esentially congratulate the player for their achievements.
+#This will congratulate the player for their achievements.
 printf "So you are the famous Linus of Directoropolis! I've had numerous reports of your feats today! I've heard you have:\n"
 sleep 3
 if [ $QuestComp1 -eq 1  ]
@@ -36,36 +36,29 @@ printf "I'm absolutely astounded at your capabilities. You're definitely our cha
 sleep 5  
 
 
-
-
-
-
-
-
-
-
 function menu () {
-        printf "Option 1 [*Add dialogue*]\nOption 2 [*Add dialogue*]\nOption 3 [*Add dialogue*]\n"
+        printf "Option 1 [What do I have to do?]\nOption 2 [How do I use this 'chmod'?]\nOption 3 [Goodbye, General Garreth, you can count on me!]\n"
         read -p "(Enter 1, 2, or 3): " choice
 }
 while [ $x -eq 1 ]
 do
 if [ $a -eq 0 ]
 then
-        printf "*NPC Question or statement before menu*\n"
+        printf "I need to teach you a top secret technique - chmod - it allows complete control over a object/file/script/directory. Godzilla stands no chance against you.\n"
         menu
         a=1
 else
-        printf "Anything else?\n"
+        printf "Anything else, brave Linus?\n"
         menu
 fi
 case "$choice" in
-   1) echo "*Information 1*"
+   1) printf "The command is chmod, there are many uses, here you will just need to remember the lucky numbers 777. Use 'chmod 777 target' to render Godzilla vulnerable.\nThen, you must rm him in the same fashion as you did with the garbage. How fitting.\n"
    ;;
-   2) echo "*Information 2*"
+   2) echo "In general, you use 'chmod ### target' where the numbers are permissions. You'll use 777 because we'd be lucky to pull this off and allows anyone to modify this monster."
    ;;
-   3) echo "*Information 3*"
+   3) echo "Goodbye, soldier! Make us proud!!! You can now see SHOWDOWN_ST."
       x=0
+      mv .SHOWDOWN_ST SHOWDOWN_ST 2>/dev/null
    ;;
    *) echo "I don't know what that is..."
    ;;
