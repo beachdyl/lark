@@ -1,32 +1,33 @@
 #!/bin/bash
+#This is to brief the player on the rm command
 
 a=0 #this is used to trigger a secondary prompt
 x=1 #this is used to trigger the exit status
 
 function menu () {
-        printf "Option 1 [*Add dialogue*]\nOption 2 [*Add dialogue*]\nOption 3 [*Add dialogue*]\n"
+        printf "Option 1 ['rm', Sir?]\nOption 2 [I was told I needed to remove Godzilla, is that related?]\nOption 3 [On it, sir!]\n"
         read -p "(Enter 1, 2, or 3): " choice
 }
 while [ $x -eq 1 ]
 do
 if [ $a -eq 0 ]
 then
-        printf "*NPC Question or statement before menu*\n"
+        printf "Over here soldier! We need to clear the way to get any closer. Are you able to rm?\n"
         menu
         a=1
 else
-        printf "Anything else?\n"
+        printf "Am I clear, soldier?\n"
         menu
 fi
 case "$choice" in
-   1) echo "*Information 1*"
+   1) printf "Yes soldier! 'rm' is a tool in linux to remove an object, and we need to use it to clear all this junk in the way.\nYou simply need to use 'rm target' and it will remove whatever target you have in mind, but this is just file junk.\nIt won't be quite so simple for something with different permissions or an entire direcotry system. Those are weapons of mass destruction.\n"
    ;;
-   2) echo "*Information 2*"
+   2) echo "Completely! But the rest is classified! Take it up with Garreth when we get there."
    ;;
-   3) echo "*Information 3*"
+   3) echo "Counting on you, soldier! Remove all .gz files in the way, then we can end this."
       x=0
    ;;
-   *) echo "I don't know what that is..."
+   *) echo "What, soldier?"
    ;;
 esac
 done

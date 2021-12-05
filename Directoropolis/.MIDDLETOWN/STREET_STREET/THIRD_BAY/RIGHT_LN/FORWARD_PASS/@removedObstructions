@@ -1,0 +1,11 @@
+#!/bin/bash
+#This is a challenge tester to see if the challenge was carried out successfully, need to remove all .gz files
+
+if [ -f crushed_statue.gz ] || [ -f burning_bus.gz ] || [ -f wendys_wrapper.gz ] 
+then 
+	echo "We are removing all of the ruined objects (ending in .gz)"
+else 
+	QuestComp4=1
+	echo "You've successfully cleared the path to the FRONTLINES, go and find Garreth. It's time to end this, Linus."
+	
+fi
