@@ -13,22 +13,54 @@ while [ $x -eq 1 ]
 do
 if [ $a -eq 0 ]
 then
-        printf "Halt! This is a resttricted area. Are you Linus? Tell me who sent you, and answer carefully.\n"
+        printf "Halt! This is a restricted area. Are you Linus? Tell me who sent you, and answer carefully.\n"
         menu
-        a=1
-else
-        printf "Anything else?\n"
-        menu
+	a=1
+else 
+	menu
 fi
 case "$choice" in
-   1) echo "*Information 1*"
+   1) echo "Are you sure about that?"
    ;;
-   2) echo "*Information 2*"
+   2) echo "Are you sure about that?"
    ;;
-   3) echo "*Information 3*"
+   3) echo "Alright, you check out."
       x=0
    ;;
-   *) echo "I don't know what that is..."
+   *) echo "Who?"
    ;;
 esac
 done
+
+#This section is for the second menu, after verifying who you are.
+
+function menu2 (){
+        printf "Option 1 [Just me? How so?]\nOption 2 [I can do this, goodbye Sgt. Brooks.]\n"
+	read -p "(Enter 1, or 2): " choice2
+}
+
+x=1
+a=0
+
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "Allow me to brief you, Linus. We don't have much time, Godzilla has been tearing up MIDDLETOWN and we need to have him removed. But hes protected to us non-users.\nWe are going to need your skills and permissions to get rid of him once and for all. Garreth will have the instructions, you just need to reach him. Garreth is deep in \nthe city on the FRONTLINES.\n"
+        menu2
+        a=1
+else
+        menu2
+fi
+case "$choice2" in
+   1) printf "All objects, directories, and scripts have permissions. It is up to the user to modify these to control them better, we need your help to chnage them, Linus.\nYou have the permissions to use chmod and end this. Since Godzilla came from elsewhere, his permissions are modified and he is unable to be removed by us, it has to be you.\n"
+   ;;
+   2) echo "Good luck, soldier!"
+      x=0
+   ;;
+   *) echo "Speak up, soldier."
+   ;;
+esac
+done
+
+
