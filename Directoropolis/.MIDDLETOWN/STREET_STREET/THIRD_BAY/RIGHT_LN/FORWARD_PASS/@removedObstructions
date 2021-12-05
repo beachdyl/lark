@@ -7,5 +7,6 @@ then
 else 
 	QuestComp4=1
 	echo "You've successfully cleared the path to the FRONTLINES, go and find Garreth. It's time to end this, Linus."
-	
+	mv .FRONTLINES FRONTLINES 2>/dev/null
+	cat .secondBartz > @Cpl_Bartz	
 fi

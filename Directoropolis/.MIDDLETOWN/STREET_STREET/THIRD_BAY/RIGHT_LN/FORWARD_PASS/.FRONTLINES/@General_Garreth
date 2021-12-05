@@ -1,0 +1,73 @@
+#!/bin/bash
+
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+
+
+#This will esentially congratulate the player for their achievements.
+printf "So you are the famous Linus of Directoropolis! I've had numerous reports of your feats today! I've heard you have:\n"
+sleep 3
+if [ $QuestComp1 -eq 1  ]
+then
+	echo "Freed injured citiczens from rubble in UPTOWN, and repaired a local mans house."
+	sleep 4
+fi
+
+if [ $QuestComp2 -eq 1 ] 
+then
+	echo "Rebuilt a hospital in DOWNTOWN using the mkdir command!"
+	sleep 4
+fi
+
+if [ $QuestComp3 -eq 1 ] 
+then
+	echo "Helped rearrange an apartment complex for my friend Loberg using the mv command!"
+	sleep 4
+fi
+
+if [ $QuestComp4 -eq 1 ]
+then
+	echo "Cleared the way here of all this monsterous wreckage using the rm command!"
+	sleep 4
+fi
+
+printf "I'm absolutely astounded at your capabilities. You're definitely our chance at getting rid of this monster. How about learning one last command to save us all?\n"
+sleep 5  
+
+
+
+
+
+
+
+
+
+
+function menu () {
+        printf "Option 1 [*Add dialogue*]\nOption 2 [*Add dialogue*]\nOption 3 [*Add dialogue*]\n"
+        read -p "(Enter 1, 2, or 3): " choice
+}
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "*NPC Question or statement before menu*\n"
+        menu
+        a=1
+else
+        printf "Anything else?\n"
+        menu
+fi
+case "$choice" in
+   1) echo "*Information 1*"
+   ;;
+   2) echo "*Information 2*"
+   ;;
+   3) echo "*Information 3*"
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done

@@ -1,0 +1,4 @@
+#!/bin/bash
+#This version of Garreth only exists to make the conversation seem normal if the player decides to check with Bartz again for some reason
+
+printf "You go ahead soldier, I have to stand guard here. Tell General Garreth we've done well.\nI'm sure you can do this.\n"
