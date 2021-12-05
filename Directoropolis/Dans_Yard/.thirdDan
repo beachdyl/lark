@@ -24,7 +24,7 @@ case "$choice" in
    ;;
    2) echo "Good luck Linus, you'll do great things!!! Please be careful"
       x=0
-      mv ../.DOWNTOWN ../DOWNTOWN  
+      mv ../.DOWNTOWN ../DOWNTOWN 2>/dev/null 
    ;;
    *) echo "I don't know what that is..."
    ;;

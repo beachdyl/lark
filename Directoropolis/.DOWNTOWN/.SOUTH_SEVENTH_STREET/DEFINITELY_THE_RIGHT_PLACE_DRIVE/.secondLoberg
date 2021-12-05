@@ -10,7 +10,7 @@ function menu () {
 }
 
 function menu2(){
-	printf "Option 1 []\nOption 2 []\nOption 3 [Goodbye,Loberg.]\n"
+	printf "Option 1 [What is the mission?]\nOption 2 [So where do you want me to go?]\nOption 3 [Goodbye,Loberg. Stay safe.]\n"
 	read -p "(Enter 1, 2, or 3): " choice2
 
 }
@@ -38,6 +38,18 @@ case "$choice" in
 esac
 done
 
+
+
+
+
+
+
+
+
+
+
+
+
 #This is to appear after the congratulations, it will allow Loberg to progress the player and have a full menu dedicated to the mission. The player will be directed to MIDDLETOWN
 a=0
 x=1
@@ -55,11 +67,12 @@ else
         menu2
 fi
 case "$choice2" in
-   1) echo "Choice 1, second menu"
+   1) echo "This mission is not for the weak of heart, though your skills show this should be right on your level of skill. Linus, I think you may be the only one who can truly do this."
    ;;
-   2) echo "Choice 2, second menu"
+   #Used printf here because of the long output, needed formatting
+   2) printf "You must head to MIDDLETOWN of Directoropolis, I've heard reports of the military holding off Godzilla, they just need a user. You own this whole Directoropolis, and should be able to restore balance.\nFind Garreth, he will brief you.\n"
    ;;
-   3) echo "Goodbye."
+   3) echo "Best of luck Linus, remember, head to MIDDLETOWN of Directoropolis. You're our noly hope."
       x=0
    ;;
    *) echo "I don't know what that is..."
