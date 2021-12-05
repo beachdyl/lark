@@ -5,7 +5,7 @@
 if [ -d hospital ]
 then 
 	echo "You used lowecase h, you should know that capitalization matters in the shell. Try again using capital H. 'hospital' has been removed."
-	rmdir hospital
+	rm -r hospital
 fi
 if [ -d Hospital ]
 then 

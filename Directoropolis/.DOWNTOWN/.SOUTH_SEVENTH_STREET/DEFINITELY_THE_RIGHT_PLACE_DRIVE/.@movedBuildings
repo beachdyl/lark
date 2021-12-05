@@ -3,9 +3,9 @@
 
 
 #This checks if you fixed the rubble, if rubble.gz exists then you didn't fix yet
-if [ -f COMPLEX_A/A114 ] && [ -f COMPLEX_A/A336 ] && [ -f COMPLEX_B/B981 ] && [ -f COMPLEX_B/B1 ] && [ -f COMPLEX_C/C646 ] && [ -f COMPLEX_C/C23 ]
+if [ -d COMPLEX_A/A114 ] && [ -d COMPLEX_A/A336 ] && [ -d COMPLEX_B/B981 ] && [ -d COMPLEX_B/B1 ] && [ -d COMPLEX_C/C646 ] && [ -d COMPLEX_C/C23 ]
 then 
-	echo "You did it! You successfully helped Loberg to move his buildings back!!! Very impressive."
+	echo "You did it! You successfully helped Loberg to move his buildings back!!! Very impressive. Talk to Loberg to hear what he has to say..."
 else 
 	echo "Looks like you still aren't done..."
 fi

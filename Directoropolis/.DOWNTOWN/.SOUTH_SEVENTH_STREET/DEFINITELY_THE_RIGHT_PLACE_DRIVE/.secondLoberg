@@ -1,2 +1,69 @@
 #!/bin/bash
 #Loberg needs to congratulate the player, suggest they took COP3353C, then guide them to MIDDLETOWN in Directoropolis where they meet up with Garreth, a military guy.
+
+a=0 #this is used to trigger a secondary prompt
+x=1 #this is used to trigger the exit status
+
+function menu () {
+        printf "Option 1 [Actually yes! That's why I'm here.]\nOption 2 [Actually, no, I'm just learning as I go.]\n"
+        read -p "(Enter 1, or 2): " choice
+}
+
+function menu2(){
+	printf "Option 1 []\nOption 2 []\nOption 3 [Goodbye,Loberg.]\n"
+	read -p "(Enter 1, 2, or 3): " choice2
+
+}
+
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "You've done amazing! Thank you so much for helping get my buildings back!!! Surely you have experience in the COP3353C Student Corps?\n"
+        menu
+        a=1
+else
+        printf "Anything else?\n"
+        menu
+fi
+case "$choice" in
+   1) echo "Incredible! I'm sure this was a nice refresher, yes? Probably a walk in the park for a pro such as yourself. I know someone who may have a mission for you."
+      x=0 #The reason this breaks for either option is because this is a two tiered menu, we want the illusion of choice in progression, though either choice leads to the same directive with different congratulations
+   ;;
+   2) echo "Well you're a born natural! I'm sure you could provide invaluable assistance to an associate of mine. I know someone who may have a mission for you. "
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done
+
+#This is to appear after the congratulations, it will allow Loberg to progress the player and have a full menu dedicated to the mission. The player will be directed to MIDDLETOWN
+a=0
+x=1
+
+
+while [ $x -eq 1 ]
+do
+if [ $a -eq 0 ]
+then
+        printf "I'm sure you may be intimidated by the word mission, though no worries. It is high time someone delt with this big bully - Godzilla.\n"
+        menu2
+        a=1
+else
+        printf "Anything else you'd like to know?\n"
+        menu2
+fi
+case "$choice2" in
+   1) echo "Choice 1, second menu"
+   ;;
+   2) echo "Choice 2, second menu"
+   ;;
+   3) echo "Goodbye."
+      x=0
+   ;;
+   *) echo "I don't know what that is..."
+   ;;
+esac
+done
+

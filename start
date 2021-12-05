@@ -31,6 +31,8 @@ help(){ #I believe this is technically an override, it will let users have help 
 #This command is used to move the player to the starting point of the game (Linus Bedroom)
 cd Directoropolis/Linus_House/Bedroom/
 echo "If you need help, type 'help' for a quick list of the basics"
+
+#This is the section for challenge and completion variables
 QuestComp1=0
-
-
+QuestComp2=0
+LOBERG=0

@@ -3,6 +3,21 @@
 a=0 #this is used to trigger a secondary prompt
 x=1 #this is used to trigger the exit status
 
+#I have decided to put these challenge builders in a fucntion with an if statement that will only execute once, I don't want people breaking it by talking to Loberg twice, also why I had him make a sign of external instructions 
+#This function is only called once, when the $LOBERG variable is set to 0 (as it is in the start script)
+function reveal_apartments () {
+	cp .Lobergs_Sign Lobergs_Sign 2>/dev/null #This makes Loberg's notes appear on a sign 
+        mkdir COMPLEX_A COMPLEX_B COMPLEX_C 2>/dev/null #Makes the challenge sorting bins
+        mkdir A114 A336 B981 B1 C646 C23 2>/dev/null #Makes the apartments to sort
+        mv .@movedBuildings @movedBuildings 2>/dev/null #This moves the challenge checker into view
+}
+
+function reveal_apartments2 () {
+	echo "yeah this works for dev"
+}
+
+
+
 function menu () {
         printf "Option 1 [How could I possibly move things? That's a whole directory!!]\nOption 2 [What would you like for me to do?]\nOption 3 [Goodbye, Loberg.]\n"
         read -p "(Enter 1, 2, or 3): " choice
@@ -11,6 +26,7 @@ while [ $x -eq 1 ]
 do
 if [ $a -eq 0 ]
 then
+	#This part is to be a joke, please don't remove
         printf "Salutations young fellow! Mayhaps you coulds't help mineself ponce a woller? The scally mong hast misplaced me tenants!\n"
 	sleep 4
 	printf "...\n"
@@ -33,13 +49,21 @@ case "$choice" in
    echo "I'll add instructions on a sign for you. You should see the challenge now."
    ;;
    3) echo "Good luck Linus, I'll add instructions on a sign for you. You should see the challenge now."
-	   cp .Lobergs_Sign Lobergs_Sign 
-	   mkdir COMPLEX_A COMPLEX_B COMPLEX_C
-	   touch A114 A336 B981 B1 C646 C23
-	   mv .@movedBuildings @movedBuildings
       x=0
    ;;
    *) echo "I don't know what that is..."
    ;;
 esac
 done
+
+if [ $LOBERG -eq 0 ]
+then
+	reveal_apartments
+	LOBERG=1
+fi
+
+
+
+
+
+
