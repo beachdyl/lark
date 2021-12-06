@@ -70,7 +70,7 @@ done
 sleep 3
 printf "Godzilla: There's no way you know all of this! Am I in some sort of knowledge based learning game disguised as a quest to defeat me by using a cleverly named hero???\n"
 sleep 8 
-printf "Linus: Literally what are you talking about? That's be absurd. You destroyed my city and I am here to put a stop to you. Enough of these silly games!\n"
+printf "Linus: Literally what are you talking about? That's absurd. You destroyed my city and I am here to put a stop to you. Enough of these silly games!\n"
 sleep 7
 
 printf "Quick! While Godzilla is pondering existence! Use what General Garreth taught you to end this!\n"
@@ -79,7 +79,8 @@ echo "Godzilla: Who said that?"
 sleep 3
 
 #This is to jog the memories while also not having them leave the script
-printf "You do remember, don't you?\n"
+printf "You do remember, don't you?\n\n"
+
 cat .t
 
 #This is the part where they chmod Godzilla
@@ -96,8 +97,8 @@ fi
 done
 
 #This is the part where you now must remove Godzilla
-printf "\nGodzilla: WAAIIIITT!! Linus you cant do this to me! Please dont type the lines 'rm Godzilla'! You can't do this to me! It's not fair, you distracted me!"
-sleep 9
+printf "\nGodzilla: WAAIIIITT!! Linus you cant do this to me! Please dont type the lines 'rm Godzilla'! You can't do this to me! It's not fair, you distracted me!\n"
+sleep 7
 printf "Linus: Sorry Godzilla, but you distracted me from my favorite pastime - sleeping. And also you caused the billions in damages...\n"
 sleep 6
 
@@ -116,3 +117,9 @@ fi
 done
 
 #Need to add a congratulations page and a credits that display
+cat .fin
+sleep 5
+cat .congrats
+sleep 5
+cat .fin2
+sleep 5

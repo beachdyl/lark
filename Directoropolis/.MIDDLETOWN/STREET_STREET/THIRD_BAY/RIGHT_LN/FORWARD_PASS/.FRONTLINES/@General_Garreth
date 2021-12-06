@@ -59,7 +59,7 @@ case "$choice" in
    ;;
    2) echo "In general, you use 'chmod ### target' where the numbers are permissions. You'll use 777 because we'd be lucky to pull this off and allows anyone to modify this monster."
    ;;
-   3) echo "Goodbye, soldier! Make us proud!!! You can now see SHOWDOWN_ST."
+   3) echo "Goodbye, soldier! Make us proud!!! You can now see SHOWDOWN_ST. Remember, chmod 777 Godzilla then rm Godzilla."
       x=0
       mv .SHOWDOWN_ST SHOWDOWN_ST 2>/dev/null
    ;;
