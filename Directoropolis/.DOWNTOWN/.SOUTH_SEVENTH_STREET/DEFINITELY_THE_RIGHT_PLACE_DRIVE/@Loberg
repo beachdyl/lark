@@ -43,7 +43,7 @@ else
         menu
 fi
 case "$choice" in
-   1) echo "The shell is quite powerful Linus. Everyhting you have been interacting with is shell scripts in the Directoropolis. A single line can do so much."
+   1) echo "The shell is quite powerful Linus. Everything you have been interacting with is shell scripts in the Directoropolis. A single line can do so much."
    ;;
 2) echo "Quite simple to move things, trust me. Use the command 'mv target *space* destination' The target and destination could even be a directory or two deep, you can use / and [TAB] to help."
    echo "I'll add instructions on a sign for you. You should see the challenge now."
