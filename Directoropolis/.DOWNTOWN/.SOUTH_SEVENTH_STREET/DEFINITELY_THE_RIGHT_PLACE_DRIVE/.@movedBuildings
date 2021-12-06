@@ -3,9 +3,9 @@
 
 
 #This checks if you fixed the rubble, if rubble.gz exists then you didn't fix yet
-if [ -d COMPLEX_A/A114 ] && [ -d COMPLEX_A/A336 ] && [ -d COMPLEX_B/B981 ] && [ -d COMPLEX_B/B1 ] && [ -d COMPLEX_C/C646 ] && [ -d COMPLEX_C/C23 ]
+if [ -d COMPLEX_A/A114 ] && [ -d COMPLEX_A/A336 ] && [ -d COMPLEX_B/B981 ] && [ -d COMPLEX_B/B1 ] && [ -d COMPLEX_C/C646 ] && [ -d COMPLEX_C/C23 ] && [ -f COMPLEX_C/PP_the_cat ]
 then 
-	echo "You did it! You successfully helped Loberg to move his buildings back!!! Very impressive. Talk to Loberg to hear what he has to say..."
+	echo "You did it! You successfully helped Loberg to move his buildings back and made PP_the_cat return home!!!! Very impressive. Talk to Loberg to hear what he has to say..."
 	cat .secondLoberg > @Loberg 2>/dev/null
 	QuestComp3=1
 else 

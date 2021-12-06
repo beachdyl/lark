@@ -3,3 +3,7 @@ If you have a ball in front of you, and you want to put it into the bin, you wou
 'mv ball bin/' to move the ball into the bin. Easy yes?
 What if your bin has a slot, like for 'redBalls' so we have 'mv ball bin/redBalls/' No, we won't use this today, though it may help you one day.
 I need you to help me move the apartments beginning with letters A B and C into their complex again.
+
+Oh, also one of my tenants is in need of their cat, 'PP_the_cat' could I teach you a similar command?
+Just as you can create directories with mkdir, you can create files and objects with 'touch filename' to make a file
+So I would need you to make 'PP_the_cat' and use mv to put him into COMPLEX_C Pretty Please?
