@@ -1,0 +1,85 @@
+#!/bin/bash
+
+#This runs the starting conversationi
+if [ $dev -eq 0 ]
+then	
+	. .conversation1
+fi
+x=0
+
+
+#This is the first question
+while [ $x -eq 0 ]
+do	
+printf "Godzilla: First question, how many fingers am I holding up? Read my 'hand' file to pass this challenge. Here is your directory\n"
+echo "hand leg face @Godzilla"
+echo ""
+
+ANS="cat hand"
+read -p "Enter commands to read from the hand file: " choice
+if [ "$ANS" = "$choice" ]
+then
+	 printf "'$choice' was correct! It was 3 fingers.\n"
+	 x=1
+fi
+done
+
+echo ""
+
+#This is the second question
+
+x=0
+while [ $x -eq 0 ]
+do
+printf "Godzilla: Second question, how would you travel to my house if your directory looks like this.\n"
+echo "hand leg face @Godzilla MY_HOUSE"
+echo ""
+
+ANS="cd MY_HOUSE"
+read -p "Enter commands to travel to Godzilla's house: " choice
+if [ "$ANS" = "$choice" ]
+then
+         printf "'$choice' was correct! Please get out of my home.\n"
+	 x=1
+fi
+done
+
+#This is a conversation to show he is beginning to be annoyed
+sleep 4
+printf "Godzilla: You know what, Linus. I think this next one will nip that heroic attitude you have!\n"
+sleep 4
+printf "Linus: Just give me the question already you scaly fiend.\n"
+sleep 4
+printf "Godzilla: ...\n"
+sleep 4
+
+
+#This is the third question
+x=0
+while [ $x -eq 0 ]
+do
+printf "Godzilla: Third question, there's no way you remember how to make directories destroyed by me. Make a directory called 'house' right now hahahahahaaa!!!\n"
+sleep 3
+ANS="mkdir house"
+read -p "Enter commands to make a directory called 'house': " choice
+if [ "$ANS" = "$choice" ]
+then
+         printf "'$choice' was correct!\n"
+	 x=1
+fi
+done
+
+sleep 3
+printf "Godzilla: There's no way you know all of this! Am I in some sort of knowledge based learning game disguised as a quest to defeat me by using a cleverly named hero???\n"
+sleep 8 
+printf "Linus: Literally what are you talking about? That's be absurd. You destroyed my city and I am here to put a stop to you. Enough of these silly games!\n"
+sleep 7
+
+printf "Quick! While Godzilla is pondering existence! Use what General Garreth taught you to end this!\n"
+sleep 4
+printf "Godzilla: Who said that?"
+sleep 3
+
+
+
+

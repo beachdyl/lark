@@ -1,0 +1,16 @@
+#!/bin/bash
+
+printf "Linus: Godizlla!!! It's time for you to be stopped!\n"
+sleep 4
+printf "Godzilla: Linus, I have been waiting for you, but surely you don't think that you can best me?\n" 
+sleep 5
+printf "Linus: I know I can! You may have gotten this far, but I have a secret weapon!\n"
+sleep 4
+printf "Godzilla: Not so fast! I'm seizing your shell within this script! Your commands have no value here.\n"
+sleep 4
+printf "Linus: （°0°） Impossible! You can't expect to keep me here forever!\n"
+sleep 4
+printf "Godzila: Observant as ever, but don't be arrogant! You must defeat me in a knowledge based battle to escape my script.\n"
+sleep 5
+printf "Linus: Very well, I've conquered your wreckage and mayhem. I know I will prevail in this challenge.\n"
+sleep 5

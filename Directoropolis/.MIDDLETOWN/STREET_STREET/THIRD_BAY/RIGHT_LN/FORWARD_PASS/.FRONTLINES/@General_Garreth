@@ -36,6 +36,9 @@ printf "I'm absolutely astounded at your capabilities. You're definitely our cha
 sleep 5  
 
 
+#The next section is the actual case menu that has been used throughout the project
+
+
 function menu () {
         printf "Option 1 [What do I have to do?]\nOption 2 [How do I use this 'chmod'?]\nOption 3 [Goodbye, General Garreth, you can count on me!]\n"
         read -p "(Enter 1, 2, or 3): " choice
