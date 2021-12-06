@@ -4,7 +4,7 @@
 #This checks if you used a lowercase letter, then tells you that capitalization is important in the shell.
 if [ -d hospital ]
 then 
-	echo "You used lowecase h, you should know that capitalization matters in the shell. Try again using capital H. 'hospital' has been removed."
+	echo "You used lowercase h, you should know that capitalization matters in the shell. Try again using capital H. 'hospital' has been removed."
 	rm -r hospital
 fi
 if [ -d Hospital ]

@@ -44,7 +44,7 @@ done
 sleep 4
 printf "Godzilla: You know what, Linus. I think this next one will nip that heroic attitude you have!\n"
 sleep 4
-printf "Linus: Just give me the question already you scaly fiend.\n"
+printf "Linus: Just give me the question already, you scaly fiend.\n"
 sleep 4
 printf "Godzilla: ...\n"
 sleep 4
@@ -88,7 +88,7 @@ x=0
 while [ $x -eq 0 ]
 do
 ANS="chmod 777 Godzilla"
-read -p "Enter commands to chmod Godzilla vulnerable, remember the lucky numbers...(777)': " choice
+read -p "Enter commands to chmod Godzilla vulnerable, remember the lucky numbers... (777): " choice
 if [ "$ANS" = "$choice" ]
 then
 	printf "'$choice' was correct! Godzilla is now able to be modified by user! (You)\n"
@@ -99,7 +99,7 @@ done
 #This is the part where you now must remove Godzilla
 printf "\nGodzilla: WAAIIIITT!! Linus you cant do this to me! Please dont type the lines 'rm Godzilla'! You can't do this to me! It's not fair, you distracted me!\n"
 sleep 7
-printf "Linus: Sorry Godzilla, but you distracted me from my favorite pastime - sleeping. And also you caused the billions in damages...\n"
+printf "Linus: Sorry Godzilla, but you distracted me from my favorite pastime - sleeping. And also you caused the townspeople, oh, *billions* in damages...\n"
 sleep 6
 
 

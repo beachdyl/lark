@@ -39,17 +39,6 @@ esac
 done
 
 
-
-
-
-
-
-
-
-
-
-
-
 #This is to appear after the congratulations, it will allow Loberg to progress the player and have a full menu dedicated to the mission. The player will be directed to MIDDLETOWN
 a=0
 x=1
