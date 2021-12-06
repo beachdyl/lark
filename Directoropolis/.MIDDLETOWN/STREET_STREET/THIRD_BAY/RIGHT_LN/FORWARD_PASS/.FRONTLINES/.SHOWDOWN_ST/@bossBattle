@@ -69,6 +69,8 @@ then
 fi
 done
 
+
+#This is the final part of the battle, he gets confused and you have your chance
 sleep 3
 printf "Godzilla: There's no way you know all of this! Am I in some sort of knowledge based learning game disguised as a quest to defeat me by using a cleverly named hero???\n"
 sleep 8 
@@ -77,9 +79,44 @@ sleep 7
 
 printf "Quick! While Godzilla is pondering existence! Use what General Garreth taught you to end this!\n"
 sleep 4
-printf "Godzilla: Who said that?"
+echo "Godzilla: Who said that?"
 sleep 3
 
+#This is to jog the memories while also not having them leave the script
+printf "You do remember, don't you?\n"
+cat .t
+
+#This is the part where they chmod Godzilla
+x=0
+while [ $x -eq 0 ]
+do
+ANS="chmod 777 Godzilla"
+read -p "Enter commands to chmod Godzilla vulnerable, remember the lucky numbers...(777)': " choice
+if [ "$ANS" = "$choice" ]
+then
+	printf "'$choice' was correct! Godzilla is now able to be modified by user! (You)\n"
+         x=1
+fi
+done
+
+#This is the part where you now must remove Godzilla
+printf "\nGodzilla: WAAIIIITT!! Linus you cant do this to me! Please dont type the lines 'rm Godzilla'! You can't do this to me! It's not fair, you distracted me!"
+sleep 9
+printf "Linus: Sorry Godzilla, but you distracted me from my favorite pastime - sleeping. And also you caused the billions in damages...\n"
+sleep 6
 
 
+#This is the end of the game 
+x=0
+while [ $x -eq 0 ]
+do
+ANS="rm Godzilla"
+read -p "Enter commands to remove Godzilla (hint: he just told you): " choice
+if [ "$ANS" = "$choice" ]
+then
+         printf "'$choice' was correct!\n"
+         x=1
+fi
+done
 
+#Need to add a congratulations page and a credits that display
